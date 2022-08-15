@@ -18,7 +18,7 @@ public class CalculatorClientConfig {
     @Bean
     public CalculatorClient calculatorClient (Jaxb2Marshaller marshaller){
         CalculatorClient client = new CalculatorClient();
-        client.setDefaultUri("http://localhost:8080");
+        client.setDefaultUri("http://localhost:8088");
         client.setMarshaller(marshaller);
         client.setUnmarshaller(marshaller);
         return client;
